@@ -1,0 +1,63 @@
+.navBar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0rem;
+  border-bottom: 1px solid rgb(187, 187, 187);
+}
+
+.navBar a {
+  text-decoration: none;
+}
+
+.navBar li {
+  list-style: none;
+}
+
+.hamburger {
+  font-size: 2rem;
+  display: none;
+}
+
+.navMenuWeb {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navMenuMobile {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navItem {
+  margin-left: 5rem;
+}
+
+.navLink {
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.navLink:hover {
+  color: grey;
+}
+
+.navLogo {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+@media only screen and (max-width: 768px) {
+  .navMenuWeb {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+}

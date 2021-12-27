@@ -1,0 +1,18 @@
+.sectionContent {
+  margin: 5rem 0rem;
+  line-height: 1.5rem;
+}
+
+.sectionContent h1 {
+  font-size: 3rem;
+}
+
+.sectionContent h2 {
+  color: #00b2a9;
+  font-size: 2rem;
+}
+
+.sectionContent h3 {
+  font-size: 1.3rem;
+  font-weight: 500;
+}
