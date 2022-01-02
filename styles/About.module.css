@@ -1,12 +1,53 @@
 .about {
-  max-width: 60rem;
+  max-width: 80rem;
   margin: 0 auto;
   display: flex;
   align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+}
+
+.content {
+  flex-basis: 45rem;
+  padding: 1rem;
+}
+.image {
+  border-radius: 2rem;
 }
 
 .imageContainer {
-  margin: 5rem;
-  border-radius: 2rem;
-  overflow: hidden;
+  align-self: flex-start;
+  margin-top: 9rem;
+}
+
+.techGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  place-items: start center;
+  width: 100%;
+  margin-top: 8rem;
+  row-gap: 5rem;
+}
+
+.techItem {
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+
+.techItem h5 {
+  font-size: 1.5rem;
+  margin-bottom: 0;
+  margin-top: 2rem;
+}
+
+.techIcon {
+  font-size: 5rem;
+  color: grey;
+}
+
+.techName {
+  font-size: 2rem;
+  color: rgb(0, 0, 0);
 }

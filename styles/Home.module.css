@@ -1,20 +1,17 @@
-.container {
+.container h1 {
+  margin: 0;
 }
 
 .main {
   min-height: 100vh;
-  max-width: 80rem;
+  max-width: 85rem;
   margin: 0 auto;
-  padding: 2rem 3rem;
+  padding: 2rem 1.5rem;
+  color: #d00027;
 }
 
 .footer {
-  display: flex;
-  flex: 1;
-  padding: 2rem 0;
-  border-top: 1px solid #eaeaea;
-  justify-content: center;
-  align-items: center;
+  width: 100%;
 }
 
 .footer a {
@@ -22,4 +19,10 @@
   justify-content: center;
   align-items: center;
   flex-grow: 1;
+}
+
+@media only screen and (max-width: 1550px) {
+  .footer {
+    border-top: 1px solid rgba(0, 0, 0, 0.261);
+  }
 }

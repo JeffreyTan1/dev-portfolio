@@ -1,6 +1,4 @@
-import type { NextPage } from 'next'
 import Head from 'next/head'
-import Image from 'next/image'
 import About from '../components/About'
 import Contact from '../components/Contact'
 import Experience from '../components/Experience'
@@ -8,9 +6,19 @@ import Hero from '../components/Hero'
 import NavBar from '../components/NavBar'
 import Projects from '../components/Projects'
 import styles from '../styles/Home.module.css'
-import Section from '../components/Section'
+import { useEffect } from 'react'
+import Socials from '../components/Socials'
+import Toolkit from '../components/Toolkit'
 
-const Home: NextPage = () => {
+interface Props {
+  serviceID:string, templateID:string, userID:string
+}
+
+
+const Home = ({serviceID, templateID, userID}: Props) => {
+  useEffect(() => {
+  }, [])
+
   return (
     <div className={styles.container}>
       <Head>
@@ -21,19 +29,32 @@ const Home: NextPage = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
       </Head>
 
-      <main className={styles.main}>
+      <main className={styles.main} >
         <NavBar />
         <Hero/>
         <About />
+        <Toolkit />
         <Experience />
         <Projects />
-        <Contact />
+        <Contact serviceID={serviceID} templateID={templateID} userID={userID}/> 
+        
       </main>
 
       <footer className={styles.footer}>
+        <Socials />     
       </footer>
     </div>
   )
 }
 
 export default Home
+
+export async function getStaticProps() {
+  return {
+    props: {
+      serviceID: process.env.EMAILJS_SERVICE_ID,
+      templateID: process.env.EMAILJS_TEMPLATE_ID,
+      userID: process.env.EMAILJS_USER_ID
+    }, 
+  }
+}

@@ -1,17 +1,31 @@
 .navBar {
+  position: fixed;
+  left: 0;
+  width: 100%;
+  background-color: #edddd4ea;
+  z-index: 500;
+  transition: top 0.3s;
+}
+
+.navShadow {
+  box-shadow: 0px 4px 4px -3px rgba(0, 0, 0, 0.144);
+}
+
+.navBarContent {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 0rem;
-  border-bottom: 1px solid rgb(187, 187, 187);
+  height: 6rem;
+  width: 95%;
+  margin: 0 auto;
 }
 
-.navBar a {
+.navBarContent a {
   text-decoration: none;
 }
 
-.navBar li {
+.navBarContent li {
   list-style: none;
 }
 
@@ -29,8 +43,20 @@
 .navMenuMobile {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+  padding-left: 0;
+  list-style: none;
+  width: 100%;
+  display: none;
+  filter: drop-shadow(2px 4px 6px black);
+  background-color: rgba(0, 0, 0, 0.633);
+  position: inherit;
+  margin-top: 0;
+  height: 100vh;
+}
+
+.navMenuMobile li {
+  margin-left: 3rem;
+  margin-top: 4rem;
 }
 
 .navItem {
@@ -43,21 +69,51 @@
 }
 
 .navLink:hover {
-  color: grey;
+  color: #00b2a9;
 }
 
 .navLogo {
-  font-size: 2.5rem;
-  font-weight: 700;
+  cursor: pointer;
 }
 
-@media only screen and (max-width: 768px) {
+.resumeBtn {
+  font-size: 1.1rem;
+  padding: 0.8rem 0.6rem;
+  color: #00b2a9;
+  border: 0.12rem solid #00b2a9;
+  border-radius: 0.3rem;
+  background-color: transparent;
+  transition: 0.5s;
+}
+
+.resumeBtn:hover {
+  background-color: #ffffff83;
+  cursor: pointer;
+}
+
+.listNum {
+}
+
+@media only screen and (max-width: 1360px) {
   .navMenuWeb {
     display: none;
+  }
+
+  .navMenuMobile {
+    display: block;
   }
 
   .hamburger {
     display: block;
     cursor: pointer;
+  }
+
+  .navItem {
+    margin-left: 0rem;
+    margin-bottom: 2rem;
+  }
+
+  .navItem:last-of-type {
+    margin-bottom: 0rem;
   }
 }

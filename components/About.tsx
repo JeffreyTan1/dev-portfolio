@@ -2,59 +2,84 @@ import React, { ReactElement } from 'react'
 import Section from './Section'
 import styles from './../styles/About.module.css'
 import Image from 'next/image'
-interface Props {
-  
+import { motion } from "framer-motion"
+import { useInView } from 'react-intersection-observer'
+
+
+
+interface Props {  
 }
 
-
 const paragraph1 = `
-Hello, I'm Jeff, a Software Engineer from Melbourne, Australia.
+I'm Jeff, a full-stack Software Engineer from Melbourne. I have experience building web and mobile apps using JavaScript. 
 `
 
 const paragraph2 = `
-I began my journey at the beginning of 2020 when I commenced my Bachelors in Computer Science. 
-The moment I touched JavaScript, my mind was opened to a whole world of web applications and I haven't looked back since.
+I am obsessed with building beautiful UX/UI designs, but never shy away from building the odd back-end once in a while.
 `
 
 const paragraph3 = `
-Outside of being a programmer, I am a big fan of video games. Right now my game stack consists of R6, Valorant, and Rust.
-Another big part of my life is competing as a Powerlifter. 
+Outside of programming, I am a big gamer. My game-stack consists of R6, Valorant, Rust, and Minecraft.
+I am also an aspiring powerlifter and hope to compete soon.
 `
 
 const paragraph4 = `
-These are some of the technologies I've been using recently:
+I swear I stumble across another popular library or framework every day. Here are some of the main technologies I have been using most recently:
 `
 
-const listItems = ['JavaScript', 'TypeScript', 'React', 'React Native (Expo)', 'Node + Express', 'NextJS', 'MongoDB']
+
+const container = {
+  hidden: {},
+  show: {
+    transition: {
+      staggerChildren: 0.05,
+      delayChildren: 0.4,
+    },
+  },
+}
+
+const item = {
+  hidden: { opacity: 0, y: 100 },
+  show: { opacity: 1, y: 0, transition: {duration: 0.6} },
+}
+
+
 
 export default function About({}: Props): ReactElement {
+  const { ref, inView } = useInView({
+    threshold: 0.45,
+    triggerOnce: true,
+  });
+
   return (
-    <Section>
-      <div className={styles.about}>
-        <div>
-          <h2><span>{`01. `}</span> About Me</h2>
-          <p>
+    <Section id='about'>
+      <motion.div 
+      className={styles.about} 
+      ref={ref}
+      initial="hidden"
+      animate={inView ? "show" : ""}
+      variants={container}
+      >
+        <motion.div variants={item} className={styles.imageContainer}>
+          <Image src='/images/profile.png' alt="Jeffrey Tan" height={350} width={350} className={styles.image}/>
+        </motion.div>
+        <div className={styles.content}>
+          <motion.h2 variants={item}><span>{`01. `}</span> About Me</motion.h2>
+          <motion.p variants={item}>
             {paragraph1}
-          </p> 
-          <p>
+          </motion.p> 
+          <motion.p variants={item}>
             {paragraph2}
-          </p>  
-          <p>
+          </motion.p>  
+          <motion.p variants={item}>
             {paragraph3}
-          </p>  
-          <p>
+          </motion.p>  
+          <motion.p variants={item}>
             {paragraph4}
-          </p>  
-          <ul>
-            {
-              listItems.map((item, index) => (<li key={index}>{item}</li>))
-            }
-          </ul>
+          </motion.p>  
         </div>
-        <div className={styles.imageContainer}>
-          <Image src='/images/profile.png' alt="Jeffrey Tan" height={800} width={750}/>
-        </div>
-      </div>
+      </motion.div>
+
     </Section>
   )
 }

@@ -3,11 +3,12 @@ import styles from './../styles/Section.module.css'
 
 interface Props {
   children: any
+  id: string
 }
 
-export default function Section({children}: Props): ReactElement {
+export default function Section({children, id}: Props): ReactElement {
   return (
-    <section className={styles.sectionContent}>
+    <section className={styles.sectionContent} id={id}>
       {children}
     </section>
   )

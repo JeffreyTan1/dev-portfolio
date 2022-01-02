@@ -1,4 +1,31 @@
 .hero {
-  max-width: 60rem;
-  margin: 0 auto;
+  max-width: 70rem;
+  margin: 0rem auto;
+  margin-top: 14rem;
+  margin-bottom: 14rem;
+}
+
+.name {
+  color: #00b2a9;
+}
+
+.callToAction {
+  color: #fff;
+  font-size: 4rem;
+  font-weight: bold;
+  transition: 0.5s;
+  background-color: #d00027;
+  border-radius: 3rem;
+  padding: 1rem 0.8rem;
+  box-shadow: 2px 3px 7px 0px rgba(0, 0, 0, 0.233);
+}
+
+.callToAction:hover {
+  cursor: pointer;
+}
+
+.callToActionWrapper {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: flex-end;
 }

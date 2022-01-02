@@ -1,18 +1,46 @@
 .sectionContent {
-  margin: 5rem 0rem;
-  line-height: 1.5rem;
+  margin: 10rem 0rem;
+}
+
+.sectionContent:last-of-type {
+  margin-bottom: 5rem;
 }
 
 .sectionContent h1 {
-  font-size: 3rem;
+  font-size: 5.5rem;
 }
 
 .sectionContent h2 {
   color: #00b2a9;
   font-size: 2rem;
+  padding-top: 5rem;
 }
 
 .sectionContent h3 {
   font-size: 1.3rem;
   font-weight: 500;
+}
+
+.sectionContent p {
+  color: #000;
+  line-height: 1.8rem;
+  font-size: 1.2rem;
+}
+.sectionContent a {
+  color: #d00027;
+}
+
+.sectionContent li {
+  color: #000;
+  font-size: 1.2rem;
+}
+
+.sectionContent h4 {
+  font-size: 2rem;
+}
+
+@media only screen and (max-width: 760px) {
+  .sectionContent h1 {
+    font-size: 4rem;
+  }
 }

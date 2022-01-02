@@ -4,7 +4,7 @@ body {
   margin: 0;
   font-family: "Montserrat", sans-serif;
   background-color: #edddd4;
-  color: #d00027;
+  scroll-behavior: smooth;
 }
 
 a {
