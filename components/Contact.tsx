@@ -43,7 +43,7 @@ const item = {
 
 export default function Contact({userID, serviceID, templateID}: Props): ReactElement {
   const { ref, inView } = useInView({
-    threshold: 0.8,
+    threshold: 0.5,
     triggerOnce: true,
   });
 

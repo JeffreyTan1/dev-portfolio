@@ -8,7 +8,6 @@ import Projects from '../components/Projects'
 import styles from '../styles/Home.module.css'
 import { useEffect } from 'react'
 import Socials from '../components/Socials'
-import Toolkit from '../components/Toolkit'
 
 interface Props {
   serviceID:string, templateID:string, userID:string
@@ -33,7 +32,6 @@ const Home = ({serviceID, templateID, userID}: Props) => {
         <NavBar />
         <Hero/>
         <About />
-        <Toolkit />
         <Experience />
         <Projects />
         <Contact serviceID={serviceID} templateID={templateID} userID={userID}/> 

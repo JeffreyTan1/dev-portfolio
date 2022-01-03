@@ -74,7 +74,7 @@ export default function NavBar({}: Props): ReactElement {
   return (
     <nav className={`${styles.navBar} ${shadow ? styles.navShadow : ''}`} style={{top: visible || hamburgerOpen ? '0' : '-6rem'}}>
       <div className={styles.navBarContent}>
-        <a className={styles.navLogo} onClick={() => document.location.href="/"}><Image src="/images/logo.svg" alt="logo" height={80} width={80}/></a>
+        <a className={styles.navLogo} onClick={() => document.location.href="/"}><Image src="/images/logo.svg" alt="logo" height={70} width={70}/></a>
         <motion.ul className={styles.navMenuWeb}
           initial="hidden"
           animate="show"

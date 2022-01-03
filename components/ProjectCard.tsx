@@ -20,7 +20,7 @@ interface Props {
 
 export default function ProjectCard({title, image, imgHeight, imgWidth, imgLeft, children, appLink, gitHubLink, index}: Props): ReactElement {
   const { ref, inView } = useInView({
-    threshold: 0.8,
+    threshold: 0.4,
     triggerOnce: true,
   });
 

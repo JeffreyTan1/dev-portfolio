@@ -59,12 +59,12 @@ const container = {
 
 const item = {
   hidden: { opacity: 0, y: 100 },
-  show: { opacity: 1, y: 0, transition: {duration: 0.3} },
+  show: { opacity: 1, y: 0, transition: {duration: 0.6} },
 }
 
 export default function Projects({}: Props): ReactElement {
   const { ref, inView } = useInView({
-    threshold: 0.3,
+    threshold: 0.2,
     triggerOnce: true,
   });
 

@@ -1,6 +1,7 @@
 .contact {
   max-width: 35rem;
   margin: 0 auto;
+  border-top: 0.1rem solid rgba(0, 0, 0, 0.123);
 }
 
 .formGroup {
