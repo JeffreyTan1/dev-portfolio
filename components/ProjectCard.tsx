@@ -50,6 +50,7 @@ export default function ProjectCard({title, image, imgHeight, imgWidth, imgLeft,
       height={imgHeight}
       unoptimized 
       className={styles.img}
+      priority={true}
       /> 
       <div className={styles.content}>
           <motion.h2>{title}</motion.h2>
