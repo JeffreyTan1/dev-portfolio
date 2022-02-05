@@ -31,7 +31,7 @@ export default function NavBar({}: Props): ReactElement {
 
   const handleScroll = debounce(() => {
     const currentScrollPos = window.scrollY;
-    setVisible((prevScrollPos > currentScrollPos && prevScrollPos - currentScrollPos > 70)|| currentScrollPos < 10);
+    setVisible((prevScrollPos > currentScrollPos && prevScrollPos - currentScrollPos > window.innerHeight * 0.1) || currentScrollPos < window.innerHeight * 0.1);
     setShadow(currentScrollPos !== 0)
     setPrevScrollPos(currentScrollPos);
   }, 100);
@@ -80,7 +80,15 @@ export default function NavBar({}: Props): ReactElement {
           animate="show"
           variants={webContainer}
         >
-            <motion.li className={styles.navItem}
+              <motion.li className={styles.navItem}
+                variants={item}>
+                <a target="_blank" rel="noopener noreferrer" href="/files/Jeffrey Tan CV.pdf" className={styles.fileBtn}>Resume</a>
+              </motion.li>
+              <motion.li className={styles.navItem}
+                variants={item}>
+                <a target="_blank" rel="noopener noreferrer" href="/files/Unofficial Academic Transcript.pdf" className={styles.fileBtn}>Academic Transcript</a>
+              </motion.li>
+              <motion.li className={styles.navItem}
                 variants={item}
               >
                   <a href="#about" className={styles.navLink} onClick={() => {setHamburgerOpen(false); setVisible(false)}}><span className={styles.listNum}>01.</span> About</a>
@@ -97,10 +105,7 @@ export default function NavBar({}: Props): ReactElement {
                 variants={item}>
                   <a href="#contact" className={styles.navLink} onClick={() => {setHamburgerOpen(false); setVisible(false)}}><span className={styles.listNum}>04.</span> Contact</a>
               </motion.li>
-              <motion.li className={styles.navItem}
-                variants={item}>
-                <a target="_blank" rel="noopener noreferrer" href="/files/Jeffrey Tan CV 2021.pdf" className={styles.resumeBtn}>Resume</a>
-              </motion.li>
+              
         </motion.ul>
         <div className={styles.hamburger} >
           {
@@ -142,7 +147,11 @@ export default function NavBar({}: Props): ReactElement {
               </motion.li>
               <motion.li className={styles.navItem}
                 variants={item}>
-                <a target="_blank" rel="noopener noreferrer" href="/files/Jeffrey Tan CV 2021.pdf" className={styles.resumeBtn}>Resume</a>
+                <a target="_blank" rel="noopener noreferrer" href="/files/Jeffrey Tan CV.pdf" className={styles.fileBtn}>Resume</a>
+              </motion.li>
+              <motion.li className={styles.navItem}
+                variants={item}>
+                <a target="_blank" rel="noopener noreferrer" href="/files/Unofficial Academic Transcript.pdf" className={styles.fileBtn}>Academic Transcript</a>
               </motion.li>
             </motion.ul>
           }

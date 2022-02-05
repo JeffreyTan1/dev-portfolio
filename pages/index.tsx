@@ -21,7 +21,7 @@ const Home = ({serviceID, templateID, userID}: Props) => {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Jeffrey Tan</title>
+        <title>Jeffrey Tan Portfolio</title>
         <meta name="description" content="Portfolio website created using Next.js" />
         <meta name="keywords" content="Portfolio, NextJS" />
         <meta name="author" content="Jeffrey Tan" />
