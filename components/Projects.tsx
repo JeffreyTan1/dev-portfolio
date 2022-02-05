@@ -39,7 +39,7 @@ const projects = [
     height: 400,
     width: 620,
     content: <p>A React-Native mobile application for managing inventory locally on your device. 
-      Whether it is for a warehouse or just your bedroom, Inventorio is here to help you organise your items and collections.
+      Whether it be for a warehouse or just your bedroom, Inventorio is here to help you organise your items and collections.
       All while providing a modern UI with satisfying animations to make keeping track of things fun.</p>,
     appLink: 'https://expo.dev/@nexusenigma/inventorio',
     gitHubLink: 'https://github.com/JeffreyTan1/inventorio'
