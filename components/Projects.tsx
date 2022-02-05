@@ -16,9 +16,8 @@ const projects = [
     image: '/images/flashyresponsive.png',
     height: 410,
     width: 650,
-    content: <p>A full-stack website built on the MERN stack meant to give students 
-    a place to create, manage, and play flashcards and decks. The front-end 
-    is hosted on Netlify and the Backend on Heroku.</p>,
+    content: <p>A MERN-stack website that gives students 
+    a place to study and memorise flashcards as well as creating and managing your decks and cards.</p>,
     appLink: 'https://compassionate-goldstine-5ecea8.netlify.app',
     gitHubLink: 'https://github.com/JeffreyTan1/flashcards'
   },
@@ -27,9 +26,10 @@ const projects = [
     image: '/images/strokeforms.png',
     height: 400,
     width: 470,
-    content: <p>A React-Native mobile application. 
-      My brother is a hospital physician who works with lots of stroke cases. 
-      This is a secure application that condenses the check-in paperwork into one on-the-go application.</p>,
+    content: <p>A React-Native mobile application created in partnership with my brother who
+      is a hospital physician working in a stroke unit. 
+      Stroke Forms streamlines checking in stroke patients and simplifies the paperwork afterward.
+      </p>,
     appLink: 'https://expo.dev/@nexusenigma/StrokeForms',
     gitHubLink: 'https://github.com/JeffreyTan1/StrokeForms'
   },
@@ -38,8 +38,9 @@ const projects = [
     image: '/images/inventorio.png',
     height: 400,
     width: 620,
-    content: <p>A React-Native mobile application powered by Reanimated 2. Used to keep track of inventory whether it is a warehouse or just your own home. 
-      Inventorio provides a modern UI with satisfying animations to make keeping track of things fun.</p>,
+    content: <p>A React-Native mobile application for managing inventory locally on your device. 
+      Whether it is for a warehouse or just your bedroom, Inventorio is here to help you organise your items and collections.
+      All while providing a modern UI with satisfying animations to make keeping track of things fun.</p>,
     appLink: 'https://expo.dev/@nexusenigma/inventorio',
     gitHubLink: 'https://github.com/JeffreyTan1/inventorio'
   },
