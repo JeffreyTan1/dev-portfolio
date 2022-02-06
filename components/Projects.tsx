@@ -19,7 +19,7 @@ const projects = [
     content: <p>A MERN-stack website that gives students 
     a place to study and memorise flashcards as well as creating and managing your decks and cards.</p>,
     appLink: 'https://compassionate-goldstine-5ecea8.netlify.app',
-    gitHubLink: 'https://github.com/JeffreyTan1/flashcards'
+    gitHubLink: 'https://github.com/JeffreyTan1'
   },
   {
     title: 'StrokeForms',
@@ -31,7 +31,7 @@ const projects = [
       Stroke Forms streamlines checking in stroke patients and simplifies the paperwork afterward.
       </p>,
     appLink: 'https://expo.dev/@nexusenigma/StrokeForms',
-    gitHubLink: 'https://github.com/JeffreyTan1/StrokeForms'
+    gitHubLink: 'https://github.com/JeffreyTan1'
   },
   {
     title: 'Inventorio',
@@ -42,7 +42,7 @@ const projects = [
       Whether it be for a warehouse or just your bedroom, Inventorio is here to help you organise your items and collections.
       All while providing a modern UI with satisfying animations to make keeping track of things fun.</p>,
     appLink: 'https://expo.dev/@nexusenigma/inventorio',
-    gitHubLink: 'https://github.com/JeffreyTan1/inventorio'
+    gitHubLink: 'https://github.com/JeffreyTan1'
   },
 
 ]
