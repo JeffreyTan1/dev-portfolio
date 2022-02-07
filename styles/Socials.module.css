@@ -26,7 +26,7 @@
     flex-direction: row;
     margin: 3rem;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
   }
   .icon {
     margin-top: 0rem;
