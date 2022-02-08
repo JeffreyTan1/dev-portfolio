@@ -62,7 +62,7 @@ export default function Contact({userID, serviceID, templateID}: Props): ReactEl
       }, (error) => {
           console.log(error.text);
           setSubmitted(true);
-          setError(true)
+          setError(true);
       });
   };
 
@@ -100,13 +100,13 @@ export default function Contact({userID, serviceID, templateID}: Props): ReactEl
           error ? 
           <div>
             <h4>{errorMessage}</h4>
-            <Image src='https://media.giphy.com/media/Zt2f45vHLZtaU/giphy.gif' alt='BMO nervous' width={500} height={300}/>
+            <Image src='/gifs/sad.gif' alt='BMO nervous' width={500} height={300}/>
           </div>
           :
           <div>
             <h4>{thankYouMessage}</h4>
             <h4>{thankYouMessage2}</h4>
-            <Image src='https://media.giphy.com/media/10bxTLrpJNS0PC/giphy.gif' alt='BMO dancing' width={600} height={400}/>
+            <Image src='/gifs/happy.gif' alt='BMO dancing' width={600} height={400}/>
           </div>
         }
       </motion.div>
