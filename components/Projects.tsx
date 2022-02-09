@@ -17,7 +17,7 @@ const projects = [
     height: 410,
     width: 650,
     content: <p>A MERN-stack website that gives students 
-    a place to study and memorise flashcards as well as creating and managing your decks and cards.</p>,
+    a place to study and memorise flashcards as well as create and manage their decks and cards.</p>,
     appLink: 'https://compassionate-goldstine-5ecea8.netlify.app',
     gitHubLink: 'https://github.com/JeffreyTan1'
   },
