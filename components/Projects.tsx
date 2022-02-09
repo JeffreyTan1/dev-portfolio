@@ -28,7 +28,7 @@ const projects = [
     width: 470,
     content: <p>A React-Native mobile application created in partnership with my brother who
       is a hospital physician working in a stroke unit. 
-      Stroke Forms streamlines checking in stroke patients and simplifies the paperwork afterward.
+      Stroke Forms streamlines checking in stroke patients and simplifies the paperwork afterwards.
       </p>,
     appLink: 'https://expo.dev/@nexusenigma/StrokeForms',
     gitHubLink: 'https://github.com/JeffreyTan1'
