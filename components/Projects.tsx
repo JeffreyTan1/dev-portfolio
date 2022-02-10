@@ -41,7 +41,7 @@ const projects = [
     content: <p>A React-Native mobile application for managing inventory locally on your device. 
       Whether it be for a warehouse or just your bedroom, Inventorio is here to help you organise your items and collections.
       All while providing a modern UI with satisfying animations to make keeping track of things fun.</p>,
-    appLink: 'https://expo.dev/@nexusenigma/inventorio',
+    appLink: 'https://play.google.com/store/apps/details?id=com.nexusenigma.inventorio',
     gitHubLink: 'https://github.com/JeffreyTan1'
   },
 
