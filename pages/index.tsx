@@ -6,7 +6,6 @@ import Hero from '../components/Hero'
 import NavBar from '../components/NavBar'
 import Projects from '../components/Projects'
 import styles from '../styles/Home.module.css'
-import { useEffect } from 'react'
 import Socials from '../components/Socials'
 
 interface Props {
@@ -15,9 +14,6 @@ interface Props {
 
 
 const Home = ({serviceID, templateID, userID}: Props) => {
-  useEffect(() => {
-  }, [])
-
   return (
     <div className={styles.container}>
       <Head>
