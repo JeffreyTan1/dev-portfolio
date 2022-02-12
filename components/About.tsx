@@ -149,7 +149,7 @@ export default function About({}: Props): ReactElement {
       variants={container}
       >
         <motion.div variants={item} className={styles.imageContainer}>
-          <Image src='/images/profile.png' alt="Jeffrey Tan" height={350} width={350} className={styles.image}/>
+          <Image src='/images/profile.png' alt="Jeffrey Tan" height={375} width={350} className={styles.image}/>
         </motion.div>
         <div className={styles.content}>
           <motion.h2 variants={item}><span>{`01. `}</span> About Me</motion.h2>
