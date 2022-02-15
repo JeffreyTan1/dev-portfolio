@@ -18,6 +18,10 @@ const Home = ({serviceID, templateID, userID}: Props) => {
     <div className={styles.container}>
       <Head>
         <title>Jeffrey Tan Portfolio</title>
+        <meta name="keywords" content="Portfolio, NextJS, HTML, CSS, JavaScript, Developer, Jeffrey Tan, React, React Native, Web, Mobile"/>
+        <meta name="author" content="Jeffrey Tan" />
+        <meta name="description" content="I'm Jeff, And I want to help you build your next web or mobile app! Interested? Take a look at my portfolio."/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
       </Head>
 
       <main className={styles.main} >
