@@ -1,8 +1,9 @@
 .hero {
   max-width: 70rem;
   margin: 0rem auto;
-  margin-top: 12rem;
+  margin-top: 12.5rem;
   margin-bottom: 14rem;
+  color: #d00027;
 }
 
 .name {
@@ -32,12 +33,12 @@
 
 @media only screen and (max-width: 1130px) {
   .hero {
-    margin-top: 6rem;
+    margin-top: 12rem;
   }
 }
 
 @media only screen and (max-width: 450px) {
   .hero {
-    margin-top: 2rem;
+    margin-top: 6rem;
   }
 }

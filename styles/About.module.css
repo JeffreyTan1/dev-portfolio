@@ -1,12 +1,11 @@
 .about {
-  max-width: 80rem;
+  max-width: 70rem;
   margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-around;
   flex-wrap: wrap;
   flex-direction: row-reverse;
-  border-top: 0.1rem solid rgba(0, 0, 0, 0.123);
 }
 
 .content {
@@ -14,58 +13,22 @@
   padding: 1rem;
 }
 .image {
-  border-radius: 2rem;
-  opacity: 0.91;
+  border-radius: 0.7rem;
+  opacity: 0.94;
 }
-
 .imageContainer {
-  align-self: flex-start;
-  margin-top: 9rem;
-}
-
-.techGrid {
-  max-width: 80rem;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  place-items: start center;
-  width: 90%;
-  margin: 8rem auto;
-  margin-bottom: 0rem;
-  row-gap: 5rem;
-}
-
-.techItem {
-  display: grid;
-  place-items: center;
   text-align: center;
 }
 
-.techItem h5 {
-  font-size: 1.5rem;
-  margin-bottom: 0;
-  margin-top: 2rem;
+.imageCarousel {
+  align-self: flex-start;
+  margin-top: 10rem;
+  width: 25%;
 }
 
-.techIcon {
-  font-size: 5rem;
-  color: grey;
-}
-
-.techName {
-  font-size: 2rem;
-  color: rgb(0, 0, 0);
-}
-
-@media only screen and (max-width: 523px) {
-  .techItem h5 {
-    font-size: 1rem;
-  }
-
-  .techIcon {
-    font-size: 3rem;
-  }
-
-  .techName {
-    font-size: 1rem;
+@media only screen and (max-width: 1130px) {
+  .imageCarousel {
+    margin-top: 8.5rem;
+    width: 80%;
   }
 }

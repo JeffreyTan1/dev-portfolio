@@ -5,6 +5,7 @@
   background-color: #edddd4ea;
   z-index: 500;
   transition: top 0.3s;
+  color: #d00027;
 }
 
 .navShadow {
@@ -16,7 +17,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  height: 6rem;
+  height: 5rem;
   width: 95%;
   margin: 0 auto;
 }
@@ -64,8 +65,9 @@
 }
 
 .navLink {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-weight: 500;
+  transition: 500ms;
 }
 
 .navLink:hover {
@@ -77,7 +79,7 @@
 }
 
 .fileBtn {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   padding: 0.3rem 0.3rem;
   color: #00b2a9;
   border-radius: 0.3rem;
@@ -89,9 +91,6 @@
 .fileBtn:hover {
   background-color: #00b2a920;
   cursor: pointer;
-}
-
-.listNum {
 }
 
 @media only screen and (max-width: 1360px) {
@@ -115,5 +114,12 @@
 
   .navItem:last-of-type {
     margin-bottom: 0rem;
+  }
+
+  .fileBtn {
+    font-size: 1.2rem;
+    padding: 0;
+    color: #00b2a9;
+    margin: 0;
   }
 }

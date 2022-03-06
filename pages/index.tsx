@@ -12,6 +12,7 @@ import path from "path";
 import matter from "gray-matter";
 import { sortByDate } from "../utils";
 import PostCard from "../components/PostCard";
+import BlogPreview from "../components/BlogPreview";
 
 interface Props {
   serviceID: string;
@@ -31,18 +32,15 @@ const Home = ({ serviceID, templateID, userID, posts }: Props) => {
         <NavBar />
         <Hero />
         <About />
-        <Experience />
+
         <Projects />
+        <BlogPreview posts={posts} />
+        <Experience />
         <Contact
           serviceID={serviceID}
           templateID={templateID}
           userID={userID}
         />
-        <div>
-          {posts.map((post, index) => {
-            return <PostCard key={index} post={post} />;
-          })}
-        </div>
       </main>
 
       <footer className={styles.footer}>

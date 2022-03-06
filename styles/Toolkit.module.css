@@ -1,0 +1,34 @@
+.techGrid {
+  max-width: 80rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  place-items: start center;
+  width: 100%;
+  margin: 1rem auto;
+  margin-top: 3rem;
+  margin-bottom: 0;
+  row-gap: 2rem;
+  column-gap: 3rem;
+}
+
+.techItem {
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+
+.techItem h5 {
+  font-size: 1rem;
+  margin-bottom: 0;
+  margin-top: 1rem;
+}
+
+.techIcon {
+  font-size: 2rem;
+  color: grey;
+}
+
+.techName {
+  font-size: 1rem;
+  color: rgb(0, 0, 0);
+}

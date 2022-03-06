@@ -3,9 +3,10 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 import { marked } from "marked";
-import Link from "next/link";
 import Image from "next/image";
 import NavBar from "../../components/NavBar";
+import styles from "./../../styles/PostPage.module.css";
+import Head from "next/head";
 
 type Props = {
   frontmatter: any;
@@ -14,29 +15,38 @@ type Props = {
 };
 
 export default function PostPage({
-  frontmatter: { title, date, cover_image },
-  slug,
+  frontmatter: { title, date, banner_image, keywords, excerpt },
   content,
 }: Props) {
   return (
-    <div>
+    <>
+      <Head>
+        <title>{title}</title>
+        <meta name="keywords" content={keywords.toString()} />
+        <meta name="description" content={excerpt} />
+      </Head>
+
       <NavBar />
-      <Link href="/">
-        <a>Go Back</a>
-      </Link>
-      <h1>{title}</h1>
-      <p>{date}</p>
-      <Image
-        src={cover_image}
-        alt={title}
-        width={300}
-        height={200}
-        unoptimized
-        // className={styles.img}
-        // priority={true}
-      />
-      <div dangerouslySetInnerHTML={{ __html: marked(content) }}></div>
-    </div>
+
+      <div className={styles.container}>
+        <h1 className={styles.title}>{title}</h1>
+        <p className={styles.date}>{date}</p>
+        <div className={styles.imageContainer}>
+          <Image
+            src={banner_image}
+            alt={title}
+            layout="fill"
+            quality={100}
+            className={styles.image}
+          />
+        </div>
+
+        <div
+          className={styles.content}
+          dangerouslySetInnerHTML={{ __html: marked(content) }}
+        ></div>
+      </div>
+    </>
   );
 }
 

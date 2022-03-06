@@ -1,20 +1,11 @@
 .projects {
-  max-width: 90rem;
+  max-width: 70rem;
   margin: 0 auto;
-  border-top: 0.1rem solid rgba(0, 0, 0, 0.123);
 }
 
 @media only screen and (max-width: 1550px) {
   .projects {
     max-width: 55rem;
-  }
-
-  .socials {
-    position: inherit;
-    flex-direction: row;
-    margin: 3rem;
-    align-items: center;
-    justify-content: space-between;
   }
   .icon {
     margin-top: 0rem;
