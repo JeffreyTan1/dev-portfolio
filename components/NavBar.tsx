@@ -3,6 +3,7 @@ import styles from "../styles/NavBar.module.css";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 
 interface Props {}
 
@@ -79,12 +80,12 @@ export default function NavBar({}: Props): ReactElement {
       style={{ top: visible || hamburgerOpen ? "0" : "-6rem" }}
     >
       <div className={styles.navBarContent}>
-        <a
-          className={styles.navLogo}
-          onClick={() => (document.location.href = "/")}
-        >
-          <Image src="/images/logo.svg" alt="logo" height={60} width={60} />
-        </a>
+        <Link href="/">
+          <a className={styles.navLogo}>
+            <Image src="/images/logo.svg" alt="logo" height={60} width={60} />
+          </a>
+        </Link>
+
         <motion.ul
           className={styles.navMenuWeb}
           initial="hidden"
@@ -92,41 +93,41 @@ export default function NavBar({}: Props): ReactElement {
           variants={webContainer}
         >
           <motion.li className={styles.navItem} variants={item}>
-            <a href="/#about" className={styles.navLink}>
-              About
-            </a>
+            <Link href="/#about">
+              <a className={styles.navLink}>About</a>
+            </Link>
           </motion.li>
 
           <motion.li className={styles.navItem} variants={item}>
-            <a href="/#projects" className={styles.navLink}>
-              Projects
-            </a>
+            <Link href="/#projects">
+              <a className={styles.navLink}>Projects</a>
+            </Link>
           </motion.li>
           <motion.li className={styles.navItem} variants={item}>
-            <a href="/#blog" className={styles.navLink}>
-              Blog
-            </a>
-          </motion.li>
-
-          <motion.li className={styles.navItem} variants={item}>
-            <a href="/#experience" className={styles.navLink}>
-              Experience
-            </a>
+            <Link href="/#blog">
+              <a className={styles.navLink}>Blog</a>
+            </Link>
           </motion.li>
           <motion.li className={styles.navItem} variants={item}>
-            <a href="/#contact" className={styles.navLink}>
-              Contact
-            </a>
+            <Link href="/#experience">
+              <a className={styles.navLink}>Experience</a>
+            </Link>
           </motion.li>
           <motion.li className={styles.navItem} variants={item}>
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href="/docs/Jeffrey Tan CV.pdf"
-              className={styles.fileBtn}
-            >
-              Resume
-            </a>
+            <Link href="/#contact">
+              <a className={styles.navLink}>Contact</a>
+            </Link>
+          </motion.li>
+          <motion.li className={styles.navItem} variants={item}>
+            <Link href="/docs/Jeffrey Tan CV.pdf">
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.fileBtn}
+              >
+                Resume
+              </a>
+            </Link>
           </motion.li>
         </motion.ul>
         <div className={styles.hamburger}>
@@ -149,70 +150,76 @@ export default function NavBar({}: Props): ReactElement {
             transition={{ duration: 0.3 }}
           >
             <motion.li className={styles.navItem} variants={item}>
-              <a
-                href="/#about"
-                className={styles.navLink}
-                onClick={() => {
-                  setHamburgerOpen(false);
-                }}
-              >
-                About
-              </a>
+              <Link href="/#about">
+                <a
+                  className={styles.navLink}
+                  onClick={() => {
+                    setHamburgerOpen(false);
+                  }}
+                >
+                  About
+                </a>
+              </Link>
             </motion.li>
 
             <motion.li className={styles.navItem} variants={item}>
-              <a
-                href="/#projects"
-                className={styles.navLink}
-                onClick={() => {
-                  setHamburgerOpen(false);
-                }}
-              >
-                Projects
-              </a>
+              <Link href="/#projects">
+                <a
+                  className={styles.navLink}
+                  onClick={() => {
+                    setHamburgerOpen(false);
+                  }}
+                >
+                  Projects
+                </a>
+              </Link>
             </motion.li>
             <motion.li className={styles.navItem} variants={item}>
-              <a
-                href="/#blog"
-                className={styles.navLink}
-                onClick={() => {
-                  setHamburgerOpen(false);
-                }}
-              >
-                Blog
-              </a>
+              <Link href="/#blog">
+                <a
+                  className={styles.navLink}
+                  onClick={() => {
+                    setHamburgerOpen(false);
+                  }}
+                >
+                  Blog
+                </a>
+              </Link>
             </motion.li>
             <motion.li className={styles.navItem} variants={item}>
-              <a
-                href="/#experience"
-                className={styles.navLink}
-                onClick={() => {
-                  setHamburgerOpen(false);
-                }}
-              >
-                Experience
-              </a>
+              <Link href="/#experience">
+                <a
+                  className={styles.navLink}
+                  onClick={() => {
+                    setHamburgerOpen(false);
+                  }}
+                >
+                  Experience
+                </a>
+              </Link>
             </motion.li>
             <motion.li className={styles.navItem} variants={item}>
-              <a
-                href="/#contact"
-                className={styles.navLink}
-                onClick={() => {
-                  setHamburgerOpen(false);
-                }}
-              >
-                Contact
-              </a>
+              <Link href="/#contact">
+                <a
+                  className={styles.navLink}
+                  onClick={() => {
+                    setHamburgerOpen(false);
+                  }}
+                >
+                  Contact
+                </a>
+              </Link>
             </motion.li>
             <motion.li className={styles.navItem} variants={item}>
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href="/docs/Jeffrey Tan CV.pdf"
-                className={styles.fileBtn}
-              >
-                Resume
-              </a>
+              <Link href="/docs/Jeffrey Tan CV.pdf">
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={styles.fileBtn}
+                >
+                  Resume
+                </a>
+              </Link>
             </motion.li>
           </motion.ul>
         )}
