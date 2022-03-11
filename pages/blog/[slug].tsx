@@ -31,16 +31,15 @@ export default function PostPage({
       <div className={styles.container}>
         <h1 className={styles.title}>{title}</h1>
         <p className={styles.date}>{date}</p>
-        <div className={styles.imageContainer}>
-          <Image
-            src={banner_image}
-            alt={title}
-            layout="fill"
-            quality={100}
-            className={styles.image}
-          />
-        </div>
-
+        <Image
+          src={banner_image}
+          alt={title}
+          layout="responsive"
+          width={848}
+          height={250}
+          quality={100}
+          className={styles.image}
+        />
         <div
           className={styles.content}
           dangerouslySetInnerHTML={{ __html: marked(content) }}

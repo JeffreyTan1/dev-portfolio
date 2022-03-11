@@ -18,13 +18,6 @@
   margin: 1rem 0.4rem;
 }
 
-.imageContainer {
-  width: 100%;
-  height: 250px;
-  margin: 2rem 0;
-  position: relative;
-}
-
 .content p {
   line-height: 1.7rem;
 }
