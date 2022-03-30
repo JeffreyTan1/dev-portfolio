@@ -52,11 +52,11 @@ export default function Experience({}: Props): ReactElement {
           >
             resume
           </a>{" "}
-          to see the odd jobs I have done in the past. Lastly, my (unofficial){" "}
+          to see the odd jobs I have done in the past. Lastly, my{" "}
           <a
             target="_blank"
             rel="noopener noreferrer"
-            href="/docs/Unofficial Academic Transcript.pdf"
+            href="/docs/Academic Transcript.pdf"
           >
             Academic Transcript
           </a>{" "}
