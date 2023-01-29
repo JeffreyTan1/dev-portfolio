@@ -43,12 +43,12 @@ export default function Hero({}: Props): ReactElement {
         animate={inView ? "show" : ""}
         variants={container}
       >
-        <motion.h3 variants={item}>G&apos;Day 👋, I am</motion.h3>
+        <motion.h3 variants={item}>G&apos;Day 👋, I&apos;m</motion.h3>
         <motion.h1 className={styles.name} variants={item}>
           Jeffrey Tan
         </motion.h1>
-        <motion.h1 variants={item}>
-          I build things for mobile and the web.
+        <motion.h1 variants={item} className={styles.subTitle}>
+          I build awesome full-stack solutions, one app at a time.
         </motion.h1>
         <motion.div
           variants={arrow}

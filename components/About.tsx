@@ -10,21 +10,17 @@ import Slider from "react-slick";
 interface Props {}
 
 const paragraph1 = `
-I'm Jeff, a full-stack Software Engineer from Melbourne. I have experience building web and mobile apps using JavaScript. 
+I'm Jeff, a full-stack Software Engineer from Melbourne, Australia, and I have a passion for elegant and robust software solutions.
 `;
 
 const paragraph2 = `
-I am obsessed with building beautiful UX/UI designs, but never shy away from building the odd back-end once in a while.
+I have been programming for over 5 years now, and I have worked on a variety of projects ranging from small personal projects to large enterprise applications.
 `;
 
 const paragraph3 = `
-Outside of programming, I am a big gamer. My game-stack consists of R6, Valorant, Rust, and Minecraft.
-I am also an aspiring powerlifter and hope to compete soon.
+In my spare time, I enjoy lifting weights, playing video games, and watching anime. I also enjoy learning new technologies and frameworks, and I am always looking for new opportunities to learn and grow.
 `;
 
-const paragraph4 = `
-I swear I stumble across another popular library or framework every day. Here are some of the main technologies I have been using most recently:
-`;
 
 const item = {
   hidden: { opacity: 0, y: 100 },
@@ -90,7 +86,6 @@ export default function About({}: Props): ReactElement {
           <motion.p variants={item}>{paragraph1}</motion.p>
           <motion.p variants={item}>{paragraph2}</motion.p>
           <motion.p variants={item}>{paragraph3}</motion.p>
-          <motion.p variants={item}>{paragraph4}</motion.p>
         </div>
         <Toolkit />
       </motion.div>

@@ -3,11 +3,17 @@
   margin: 0rem auto;
   margin-top: 12.5rem;
   margin-bottom: 14rem;
-  color: #d00027;
+  color: #94a3b8;
 }
 
 .name {
-  color: #00b2a9;
+  color: #0ea5e9;
+}
+
+.subTitle {
+  font-size: 3rem !important;
+  font-weight: 500;
+  margin-top: 0.5rem;
 }
 
 .callToAction {
@@ -15,7 +21,7 @@
   font-size: 4rem;
   font-weight: bold;
   transition: 0.5s;
-  background-color: #d00027;
+  background-color: #94a3b8;
   border-radius: 3rem;
   padding: 1rem 0.8rem;
   box-shadow: 2px 3px 7px 0px rgba(0, 0, 0, 0.233);
