@@ -48,8 +48,8 @@ const container = {
 
 const images = [
   "/images/profile.png",
-  "/images/lifting-min.png",
-  "/images/lifting2-min.png",
+  "/images/me-1.png",
+  "/images/me-2.png",
 ];
 export default function About({}: Props): ReactElement {
   const { ref, inView } = useInView({
