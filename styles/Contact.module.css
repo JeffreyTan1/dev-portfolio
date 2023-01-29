@@ -1,7 +1,7 @@
 .contact {
   max-width: 35rem;
   margin: 0 auto;
-  color: #94a3b8;
+  color: #6b7280;
   padding-bottom: 4rem;
 }
 
@@ -15,14 +15,14 @@
   width: 100%;
   font-size: 1.7rem;
   padding: 0.3rem;
-  border-bottom: 0.2rem solid #94a3b8;
-  border-right: 0.2rem solid #94a3b8;
+  border-bottom: 0.2rem solid #6b7280;
+  border-right: 0.2rem solid #6b7280;
   border-top: none;
   border-left: none;
 }
 
 .formGroup input:focus {
-  outline: 0.2rem solid #0ea5e9;
+  outline: 0.2rem solid #3b82f6;
 }
 
 .formGroup textarea {
@@ -30,15 +30,15 @@
   height: 16rem;
   font-size: 1.7rem;
   padding: 0.3rem;
-  border-bottom: 0.2rem solid #94a3b8;
-  border-right: 0.2rem solid #94a3b8;
+  border-bottom: 0.2rem solid #6b7280;
+  border-right: 0.2rem solid #6b7280;
   border-top: none;
   border-left: none;
   resize: none;
 }
 
 .formGroup textarea:focus {
-  outline: 0.2rem solid #0ea5e9;
+  outline: 0.2rem solid #3b82f6;
 }
 
 .formGroup label {
@@ -46,7 +46,7 @@
 }
 
 .sendBtn {
-  background-color: #94a3b8;
+  background-color: #6b7280;
   color: #fff;
   padding: 0.8rem 1.5rem;
   font-weight: bold;
@@ -75,8 +75,8 @@
   width: 2rem;
   height: 2rem;
   border-radius: 50%;
-  border: 6px solid #0ea5e9;
-  border-color: #0ea5e9 transparent #0ea5e9 transparent;
+  border: 6px solid #3b82f6;
+  border-color: #3b82f6 transparent #3b82f6 transparent;
   animation: ldsdualring 1.2s linear infinite;
 }
 @keyframes ldsdualring {
