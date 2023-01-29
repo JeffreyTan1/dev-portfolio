@@ -1,8 +1,7 @@
 import "../styles/globals.css";
-import type { AppProps } from "next/app";
 import Head from "next/head";
 
-function MyApp({ Component, pageProps }: AppProps) {
+function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head>
@@ -25,7 +24,6 @@ function MyApp({ Component, pageProps }: AppProps) {
         <link
           rel="stylesheet"
           type="text/css"
-          charSet="UTF-8"
           href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css"
         />
         <link
