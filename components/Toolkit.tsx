@@ -9,6 +9,8 @@ import {
   SiNodedotjs,
   SiNextdotjs,
   SiTypescript,
+  SiDotnet,
+  SiDatabricks,
 } from "react-icons/si";
 
 const techContainer = {
@@ -37,38 +39,43 @@ const TechItem = ({ name, description, Icon }) => {
 
 const techData = [
   {
-    description: "Web Frontends",
+    description: (
+      <>
+        Web & Mobile <br /> Frontends
+      </>
+    ),
     name: "React",
     icon: <SiReact className={styles.techIcon} />,
   },
   {
-    description: "Restful APIs",
-    name: "NodeJS",
-    icon: <SiNodedotjs className={styles.techIcon} />,
-  },
-  {
-    description: "Restful APIs",
-    name: "Spring",
-    icon: <SiSpring className={styles.techIcon} />,
-  },
-  {
     description: (
       <>
-        Static Websites <br /> (like this!)
+        Fullstack SSR, SSG, ISR <br /> Web Apps
       </>
     ),
     name: "NextJS",
     icon: <SiNextdotjs className={styles.techIcon} />,
   },
   {
+    description: "My Favorite Language",
+    name: "TypeScript",
+    icon: <SiTypescript className={styles.techIcon} />,
+  },
+  {
+    description: "Data Science & Engineering",
+    name: "Azure Databricks",
+    icon: <SiDatabricks className={styles.techIcon} />,
+  },
+  {
+    description: "APIs & Microservices",
+    name: "ASP.NET",
+    icon: <SiDotnet className={styles.techIcon} />,
+  },
+
+  {
     description: "React Native Apps",
     name: "Expo",
     icon: <SiExpo className={styles.techIcon} />,
-  },
-  {
-    description: "A Stricter JavaScript",
-    name: "TypeScript",
-    icon: <SiTypescript className={styles.techIcon} />,
   },
 ];
 

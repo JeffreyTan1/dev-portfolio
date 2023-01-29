@@ -14,7 +14,7 @@ I'm Jeff, a full-stack Software Engineer from Melbourne, Australia, and I have a
 `;
 
 const paragraph2 = `
-I have been programming for over 5 years now, and I have worked on a variety of projects ranging from small personal projects to large enterprise applications.
+I have been programming for over 3 years now, and I have worked on a variety of projects ranging from small personal projects to large enterprise applications.
 `;
 
 const paragraph3 = `
