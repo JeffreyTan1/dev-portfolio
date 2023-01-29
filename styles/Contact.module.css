@@ -19,6 +19,7 @@
   border-right: 0.2rem solid #6b7280;
   border-top: none;
   border-left: none;
+  background-color: #e5e7eb;
 }
 
 .formGroup input:focus {
@@ -35,6 +36,7 @@
   border-top: none;
   border-left: none;
   resize: none;
+  background-color: #e5e7eb;
 }
 
 .formGroup textarea:focus {
@@ -58,7 +60,7 @@
 }
 
 .sendBtn:hover {
-  background-color: #ad0020;
+  background-color: #3b82f6;
 }
 
 .ldsdualring {

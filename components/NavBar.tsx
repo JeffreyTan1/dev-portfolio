@@ -82,7 +82,12 @@ export default function NavBar({}: Props): ReactElement {
       <div className={styles.navBarContent}>
         <Link href="/">
           <a className={styles.navLogo}>
-            <Image src="/images/logo.svg" alt="logo" height={60} width={60} />
+            <Image
+              src="/images/JEFFREYTAN.DEV.svg"
+              alt="logo"
+              height={60}
+              width={250}
+            />
           </a>
         </Link>
 
@@ -97,10 +102,9 @@ export default function NavBar({}: Props): ReactElement {
               <a className={styles.navLink}>About</a>
             </Link>
           </motion.li>
-
           <motion.li className={styles.navItem} variants={item}>
-            <Link href="/#projects">
-              <a className={styles.navLink}>Projects</a>
+            <Link href="/#experience">
+              <a className={styles.navLink}>Experience</a>
             </Link>
           </motion.li>
           <motion.li className={styles.navItem} variants={item}>
@@ -109,8 +113,8 @@ export default function NavBar({}: Props): ReactElement {
             </Link>
           </motion.li>
           <motion.li className={styles.navItem} variants={item}>
-            <Link href="/#experience">
-              <a className={styles.navLink}>Experience</a>
+            <Link href="/#projects">
+              <a className={styles.navLink}>Projects</a>
             </Link>
           </motion.li>
           <motion.li className={styles.navItem} variants={item}>
@@ -163,17 +167,18 @@ export default function NavBar({}: Props): ReactElement {
             </motion.li>
 
             <motion.li className={styles.navItem} variants={item}>
-              <Link href="/#projects">
+              <Link href="/#experience">
                 <a
                   className={styles.navLink}
                   onClick={() => {
                     setHamburgerOpen(false);
                   }}
                 >
-                  Projects
+                  Experience
                 </a>
               </Link>
             </motion.li>
+
             <motion.li className={styles.navItem} variants={item}>
               <Link href="/#blog">
                 <a
@@ -186,18 +191,20 @@ export default function NavBar({}: Props): ReactElement {
                 </a>
               </Link>
             </motion.li>
+            
             <motion.li className={styles.navItem} variants={item}>
-              <Link href="/#experience">
+              <Link href="/#projects">
                 <a
                   className={styles.navLink}
                   onClick={() => {
                     setHamburgerOpen(false);
                   }}
                 >
-                  Experience
+                  Projects
                 </a>
               </Link>
             </motion.li>
+
             <motion.li className={styles.navItem} variants={item}>
               <Link href="/#contact">
                 <a

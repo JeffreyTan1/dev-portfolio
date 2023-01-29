@@ -101,7 +101,7 @@ export default function Contact({
               type="submit"
               className={styles.sendBtn}
             >
-              <FiSend style={{ position: "relative", top: "0.rem" }} />
+              <FiSend style={{ position: "relative", top: "0.25rem" }} />
             </motion.button>
             {loading && <div className={styles.ldsdualring} />}
           </form>

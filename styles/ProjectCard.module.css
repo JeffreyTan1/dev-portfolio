@@ -32,6 +32,9 @@
 
 .links {
   margin-top: 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 
 .link {
@@ -40,11 +43,8 @@
   border-radius: 0.2rem;
 }
 
-.link:last-of-type {
-  margin-left: 1rem;
-}
 
 .link:hover {
-  background-color: #00a098;
+  background-color: #3b82f6;
   color: #fff;
 }

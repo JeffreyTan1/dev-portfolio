@@ -1,27 +1,26 @@
 .card {
   margin: 0.5rem 1rem 1rem 1rem;
-  background-color: #ffffff50;
+  background-color: rgba(194, 194, 194, 0.314);
   padding: 1rem;
   border-radius: 0.5rem;
   transition: 500ms;
+  display: flex;
+  flex-direction: column;
 }
 
 .card:hover {
-  background-color: #ffffff90;
+  background-color: #b8b8b890;
   cursor: pointer;
   transform: scale(1.02);
 }
 
-.img {
-}
-
 .date {
-  margin: 0;
+  margin-top: 1rem;
 }
 
 .title {
   margin: 0;
-  color: #6b7280;
+  color: #000000;
   font-weight: bold !important;
   font-size: 1.5rem !important;
 }

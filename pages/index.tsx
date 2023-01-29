@@ -33,9 +33,9 @@ const Home = ({ serviceID, templateID, userID, posts }: Props) => {
         <Hero />
         <About />
 
-        <Projects />
-        <BlogPreview posts={posts} />
         <Experience />
+        <BlogPreview posts={posts} />
+        <Projects />
         <Contact
           serviceID={serviceID}
           templateID={templateID}
