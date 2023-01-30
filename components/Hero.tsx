@@ -48,7 +48,7 @@ export default function Hero({}: Props): ReactElement {
           Jeffrey Tan
         </motion.h1>
         <motion.h1 variants={item} className={styles.subTitle}>
-          I build awesome full-stack solutions, one app at a time.
+          I build full-stack solutions, one app at a time.
         </motion.h1>
         <motion.div
           variants={arrow}
