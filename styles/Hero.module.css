@@ -17,13 +17,16 @@
 }
 
 .callToAction {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
   color: #fff;
-  font-size: 4rem;
-  font-weight: bold;
+  font-size: 1.5rem;
   transition: 0.5s;
   background-color: #6b7280;
-  border-radius: 3rem;
-  padding: 1rem 0.8rem;
+  border-radius: 0.5rem;
+  padding: 0.6rem 0.9rem;
   box-shadow: 2px 3px 7px 0px rgba(0, 0, 0, 0.233);
 }
 
@@ -32,7 +35,8 @@
 }
 
 .callToActionWrapper {
-  margin-top: 4rem;
+  margin-top: 3.5rem;
+  margin-right: 3%;
   display: flex;
   justify-content: flex-end;
 }

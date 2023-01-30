@@ -53,11 +53,14 @@ export default function Hero({}: Props): ReactElement {
         <motion.div
           variants={arrow}
           className={styles.callToActionWrapper}
-          animate={{ y: 15 }}
+          animate={{ y: 10 }}
           transition={{ repeat: Infinity, repeatType: "mirror", duration: 1 }}
         >
           <a href="#about">
-            <AiOutlineArrowDown className={styles.callToAction} />
+            <div className={styles.callToAction}>
+              See My Work
+              <AiOutlineArrowDown size={30}/>
+            </div>
           </a>
         </motion.div>
       </motion.div>

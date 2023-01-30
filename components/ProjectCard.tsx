@@ -12,7 +12,7 @@ interface Props {
   imgWidth: number;
   imgLeft: boolean;
   appLink: string;
-  gitHubLink: string;
+  gitHubLink?: string;
   index: number;
 }
 
@@ -72,17 +72,19 @@ export default function ProjectCard({
             className={styles.link}
             style={{ color: "#fff" }}
           >
-            View it here
+            Try it out
           </a>
-          <a
-            href={gitHubLink}
-            target="_blank"
-            rel="noreferrer"
-            className={styles.link}
-            style={{ color: "#fff" }}
-          >
-            See the Repo
-          </a>
+          {gitHubLink && (
+            <a
+              href={gitHubLink}
+              target="_blank"
+              rel="noreferrer"
+              className={styles.link}
+              style={{ color: "#fff" }}
+            >
+              See the Repo
+            </a>
+          )}
         </motion.div>
       </div>
     </motion.div>

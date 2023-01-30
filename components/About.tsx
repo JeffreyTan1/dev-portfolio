@@ -18,7 +18,7 @@ I have been programming for over 3 years now, and I have worked on a variety of 
 `;
 
 const paragraph3 = `
-In my spare time, I enjoy lifting weights, playing video games, and watching anime. I also enjoy learning new technologies and frameworks, and I am always looking for new opportunities to learn and grow.
+In my spare time, I enjoy powerlifting, playing video games, and going to concerts. I also enjoy learning new technologies and frameworks, and I am always looking for new opportunities to learn and grow my skillset.
 `;
 
 
