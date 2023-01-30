@@ -3,11 +3,12 @@ import Section from "./Section";
 import styles from "./../styles/Experience.module.css";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import Image from "next/image";
 
 interface Props {}
 
 const paragraph1 = `
-I have only just finished 2 years of a 3 year Computer Science course, though I am looking to get an internship soon... so watch this space!
+I hold a Bachelor's degree in Computer Science from RMIT University, where I built a strong understanding of programming, data structures, software development, and software architecture.
 `;
 
 const container = {
@@ -41,27 +42,49 @@ export default function Experience({}: Props): ReactElement {
         variants={container}
       >
         <motion.h2 variants={item}>Experience</motion.h2>
+
         <motion.p variants={item}>{paragraph1}</motion.p>
+
         <motion.p variants={item}>
-          For now, I would like to have my <a href="#projects">work </a>do the
-          talking, or take a look at my{" "}
+          I had the amazing opportunity to complete a software engineering
+          internship at{" "}
           <a
             target="_blank"
             rel="noopener noreferrer"
-            href="/docs/Jeffrey Tan CV.pdf"
+            href="https://www.propella.ai/"
           >
-            resume
-          </a>{" "}
-          to see the odd jobs I have done in the past. Lastly, my{" "}
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="/docs/Academic Transcript.pdf"
-          >
-            Academic Transcript
-          </a>{" "}
-          may give you an idea on how I am doing at university.
+            propella.ai
+          </a>
+          . This hands-on experience allowed me to apply my knowledge and skills
+          in a real-world setting and solidified my passion for software
+          development.
         </motion.p>
+
+        <motion.p variants={item}>
+          I was offered a junior software engineer role at Propella, which
+          allowed me to continue my growth and make valuable contributions to
+          the team, whilst completing my university studies.
+        </motion.p>
+        <motion.p variants={item}>
+          I was able to see one customer-facing product through from development
+          to launch with heavy involment in the architecture and development of
+          the product. On top of this, I was able to take on a greenfield
+          project to develop a custom internal tool for the team which tightly
+          integrated with the company&apos;s main products which were data
+          science and data engineering focused.
+        </motion.p>
+        <motion.p variants={item}>
+          My time at Propella has propelled(pun intended) my skills as a
+          developer and has gifted me a close look at the inner workings of a
+          startup.
+        </motion.p>
+        <Image
+          src={"/images/propella.png"}
+          alt={"Propella"}
+          width={350}
+          height={350}
+          quality={100}
+        />
       </motion.div>
     </Section>
   );

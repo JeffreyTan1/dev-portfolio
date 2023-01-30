@@ -59,7 +59,7 @@ export default function Hero({}: Props): ReactElement {
           <a href="#about">
             <div className={styles.callToAction}>
               See My Work
-              <AiOutlineArrowDown size={30}/>
+              <AiOutlineArrowDown size={26}/>
             </div>
           </a>
         </motion.div>
