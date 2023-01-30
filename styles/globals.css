@@ -17,6 +17,12 @@ a {
   box-sizing: border-box;
 }
 
+/* React Slick Color */
+.slick-prev:before,
+.slick-next:before {
+  color: #6b7280 !important;
+}
+
 /* Customize website's scrollbar like Mac OS
 Not supports in Firefox and IE */
 
