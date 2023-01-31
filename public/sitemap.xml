@@ -5,22 +5,27 @@
 
   <url>
     <loc>https://www.jeffreytan.dev/</loc>
-    <lastmod>2022-03-06T12:16:07+00:00</lastmod>
+    <lastmod>2023-01-31T00:00:00+00:00</lastmod>
     <priority>1.00</priority>
   </url>
   <url>
     <loc>https://www.jeffreytan.dev/files/Jeffrey%20Tan%20CV.pdf</loc>
-    <lastmod>2022-03-06T12:16:07+00:00</lastmod>
+    <lastmod>2023-01-31T00:00:00+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://www.jeffreytan.dev/files/Academic%20Transcript.pdf</loc>
-    <lastmod>2022-03-06T12:16:07+00:00</lastmod>
+    <lastmod>2023-01-31T00:00:00+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://www.jeffreytan.dev/blog/guide-to-cs-rmit</loc>
-    <lastmod>2022-03-06T12:16:07+00:00</lastmod>
+    <lastmod>2023-01-31T00:00:00+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://www.jeffreytan.dev/blog/database-migrations-in-production</loc>
+    <lastmod>2023-01-31T00:00:00+00:00</lastmod>
     <priority>0.80</priority>
   </url>
 
