@@ -38,7 +38,6 @@ export default function PostPage({
           width={848}
           height={250}
           quality={100}
-          className={styles.image}
         />
         <div
           className={styles.content}

@@ -1,20 +1,15 @@
 ---
-title: "A Guide to Computer Science at RMIT"
-date: "March 6, 2022"
-excerpt: "A guide to studying Computer Science at RMIT based on my experiences over the past 2 years."
-card_image: "/images/posts/guide-to-cs-rmit-card.png"
-banner_image: "/images/posts/guide-to-cs-rmit-banner.png"
-keywords: ['RMIT','Computer Science', 'COSC2627', 'COSC2473', 'COSC1284', 'COSC2628',
-'COSC2536', 'COSC2391', 'ISYS1057', 'MATH2350', 'COSC2123', 'COSC1076', 'ISYS1118', 'COSC2675',
-'COSC1107', 'COSC2299', 'COSC1114', 'COSC2738', 'Getting Help', 'Managing Time'
+title: "Considerations When Performing Database Migrations in Production Applications"
+date: "January 31, 2023"
+excerpt: "Guidelines to follow when performing database migrations in production applications to avoid downtime and data loss."
+card_image: "/images/posts/database-migrations-in-production-card.png"
+banner_image: "/images/posts/database-migrations-in-production-banner.png"
+keywords: [
+  # todo: add keywords
 ]
 ---
 
-Like most people, I felt completely lost coming out of secondary school. I liked science and maths but wanted the stability of being able to easily find work after I graduated. Computer Science was a popular choice that fit both those requirements so I figured it would be worth a shot. 
-
-Knowing very little of what was ahead, my journey officially began in February 2020. Luckily, it was a decision that I will never regret. The field of Computer Science has truly captivated me.
-
-I want to recount my experiences over the past 2 years studying Computer Science at RMIT. I'll give some quick-fire thoughts and advice about each course and hopefully, this blog post will serve as a guide to aspiring students wishing to decide if this is the right choice for them.
+One night I was trying to get to sleep but then this question popped up in me head.
 
 ## Year 1 Semester 1
 #### COSC2627 Discrete Structures in Computing
