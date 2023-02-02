@@ -81,7 +81,7 @@ const techData = [
 
 const Toolkit = () => {
   const { ref, inView } = useInView({
-    threshold: 0.45,
+    threshold: 0.2,
     triggerOnce: true,
   });
 

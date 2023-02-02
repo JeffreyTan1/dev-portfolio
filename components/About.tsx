@@ -53,7 +53,7 @@ const images = [
 ];
 export default function About({}: Props): ReactElement {
   const { ref, inView } = useInView({
-    threshold: 0.3,
+    threshold: 0.1,
     triggerOnce: true,
   });
 

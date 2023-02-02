@@ -30,7 +30,7 @@ const arrow = {
 
 export default function Hero({}: Props): ReactElement {
   const { ref, inView } = useInView({
-    threshold: 0.5,
+    threshold: 0.2,
     triggerOnce: true,
   });
 
@@ -58,7 +58,7 @@ export default function Hero({}: Props): ReactElement {
         >
           <a href="#about">
             <div className={styles.callToAction}>
-              See My Work
+              My Work
               <AiOutlineArrowDown size={26}/>
             </div>
           </a>

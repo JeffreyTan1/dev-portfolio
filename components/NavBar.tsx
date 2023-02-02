@@ -7,43 +7,42 @@ import Link from "next/link";
 
 interface Props {}
 
-function debounce(func: Function, wait: number, immediate?: any) {
-  var timeout: NodeJS.Timeout;
-  return function () {
-    var context = this,
-      args = arguments;
-    var later = function () {
-      timeout = null;
-      if (!immediate) func.apply(context, args);
-    };
-    var callNow = immediate && !timeout;
-    clearTimeout(timeout);
-    timeout = setTimeout(later, wait);
-    if (callNow) func.apply(context, args);
-  };
-}
-
 export default function NavBar({}: Props): ReactElement {
   const [hamburgerOpen, setHamburgerOpen] = useState(false);
-  const [prevScrollPos, setPrevScrollPos] = useState(0);
   const [visible, setVisible] = useState(true);
-  const [shadow, setShadow] = useState(false);
 
-  const handleScroll = debounce(() => {
-    const currentScrollPos = window.scrollY;
-    setVisible(
-      (prevScrollPos > currentScrollPos &&
-        prevScrollPos - currentScrollPos > window.innerHeight * 0.1) ||
-        currentScrollPos < window.innerHeight * 0.1
-    );
-    setShadow(currentScrollPos !== 0);
-    setPrevScrollPos(currentScrollPos);
-  }, 100);
-
+  // this works but doesn't account for padding
+  // useEffect(() => {
+  //   let prevScrollPos = window.pageYOffset;
+  //   window.onscroll = () => {
+  //     const currentScrollPos = window.pageYOffset;
+  //     if (prevScrollPos > currentScrollPos) {
+  //       setVisible(true);
+  //     } else {
+  //       setVisible(false);
+  //     }
+  //     prevScrollPos = currentScrollPos;
+  //   };
+  // }, []);
   useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, [prevScrollPos, visible, handleScroll]);
+    let prevScrollPos = window.pageYOffset;
+    window.onscroll = () => {
+      const currentScrollPos = window.pageYOffset;
+      if (prevScrollPos > currentScrollPos + 15) {
+        setVisible(true);
+      } else if (
+        prevScrollPos < currentScrollPos - 15
+      ) {
+        setVisible(false);
+      }
+      prevScrollPos = currentScrollPos;
+    };
+  }, []);
+
+
+
+
+
 
   const mobileContainer = {
     hidden: { opacity: 0, x: 600 },
@@ -76,7 +75,7 @@ export default function NavBar({}: Props): ReactElement {
 
   return (
     <nav
-      className={`${styles.navBar} ${shadow ? styles.navShadow : ""}`}
+      className={`${styles.navBar} ${!visible ? styles.navShadow : ""}`}
       style={{ top: visible || hamburgerOpen ? "0" : "-6rem" }}
     >
       <div className={styles.navBarContent}>

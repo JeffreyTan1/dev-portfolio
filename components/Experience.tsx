@@ -28,7 +28,7 @@ const item = {
 
 export default function Experience({}: Props): ReactElement {
   const { ref, inView } = useInView({
-    threshold: 0.6,
+    threshold: 0.2,
     triggerOnce: true,
   });
 
