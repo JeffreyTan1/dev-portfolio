@@ -4,12 +4,9 @@ import styles from "./../styles/Experience.module.css";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import Image from "next/image";
+import Link from "next/link";
 
 interface Props {}
-
-const paragraph1 = `
-I hold a Bachelor's degree in Computer Science from RMIT University, where I built a strong understanding of programming, data structures, software development, and software architecture.
-`;
 
 const container = {
   hidden: {},
@@ -43,7 +40,17 @@ export default function Experience({}: Props): ReactElement {
       >
         <motion.h2 variants={item}>Experience</motion.h2>
 
-        <motion.p variants={item}>{paragraph1}</motion.p>
+        <motion.p variants={item}>
+          I hold a Bachelor&apos;s degree in Computer Science from RMIT
+          University, where I built a strong understanding of programming, data
+          structures, software development, and software architecture. See my{" "}
+          <Link href="/docs/Academic Transcript.pdf">
+            <a target="_blank" rel="noopener noreferrer">
+              Academic Transcript
+            </a>
+          </Link>
+          .
+        </motion.p>
 
         <motion.p variants={item}>
           I had the amazing opportunity to complete a software engineering
