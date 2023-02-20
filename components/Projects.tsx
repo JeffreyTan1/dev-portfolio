@@ -23,6 +23,21 @@ const projects = [
   //   gitHubLink: "https://github.com/JeffreyTan1",
   // },
   {
+    title: "LetterDoc",
+    image: "/images/letterdoc.png",
+    height: 250,
+    width: 470,
+    content: (
+      <p>
+
+        A tool for neurologists to write letters that describe a patient&apos;s condition to their
+        GPs, using OpenAI&apos;s GPT-3 text completion. LetterDoc aims to reduce the time spent on writing letters
+        to free up more time for doctors to spend with their patients.
+      </p>
+    ),
+    appLink: "https://letterdoc.jeffreytan.dev/",
+  },
+  {
     title: "StrokeForms",
     image: "/images/strokeforms.png",
     height: 300,
@@ -44,7 +59,8 @@ const projects = [
     width: 450,
     content: (
       <p>
-        Open any URL webpage as a small popup window. Aside is a Chrome extension made using React and the Manifest V3 API.
+        Open any URL webpage as a small popup window. Aside is a Chrome
+        extension made using React and the Manifest V3 API.
       </p>
     ),
     appLink:
