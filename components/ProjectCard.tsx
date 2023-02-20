@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import Image from "next/image";
 import React, { ReactElement } from "react";
 import styles from "./../styles/ProjectCard.module.css";
@@ -53,12 +54,11 @@ export default function ProjectCard({
       animate={inView ? "show" : ""}
       variants={container}
     >
-      <Image
+      <img
         src={image}
         alt={title}
         width={imgWidth}
         height={imgHeight}
-        quality={100}
         className={styles.img}
       />
       <div className={styles.content}>

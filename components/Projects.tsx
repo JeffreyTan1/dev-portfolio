@@ -25,8 +25,8 @@ const projects = [
   {
     title: "LetterDoc",
     image: "/images/letterdoc.png",
-    height: 250,
-    width: 470,
+    height: 430,
+    width: 500,
     content: (
       <p>
 
